@@ -1,0 +1,26 @@
+@import "../styles/variables.scss";
+
+.btn {
+  font-family: $font1;
+  font-size: 2rem;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 2rem;
+  background-color: $light1;
+  color: $dark2;
+  border: none;
+
+  &--selected {
+    background-color: $playing;
+  }
+
+  &:hover {
+    background-color: lighten($light1, $amount: 5%);
+    cursor: pointer;
+    box-shadow: 2px 1px $dark2;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

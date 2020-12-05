@@ -1,0 +1,15 @@
+@import "./styles/variables.scss";
+
+body {
+  font-family: $font1;
+  background-color: $dark1;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: $paused;
+  text-align: center;
+  margin: 2rem;
+}
