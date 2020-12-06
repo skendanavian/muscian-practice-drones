@@ -18,19 +18,8 @@ const keyNames = [
 ];
 
 function ButtonList({ key, handler }) {
-  const [selected, setSelected] = useState(false);
-
-  const selectBtn = () => {
-    setSelected(true);
-    console.log(`clicked`);
-  };
-
   const buttons = keyNames.map((noteName) => {
-    return (
-      <Button key={noteName} clickHandler={selectBtn} selected={selected}>
-        {noteName}
-      </Button>
-    );
+    return <Button key={noteName}>{noteName}</Button>;
   });
 
   return (

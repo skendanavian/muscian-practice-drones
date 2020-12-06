@@ -7,17 +7,22 @@
   padding: 10px;
   border-radius: 2rem;
   background-color: $light1;
+  width: 300px;
   color: $dark2;
+
   border: none;
 
   &--selected {
     background-color: $playing;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 5px 5px $dark2;
+    }
   }
 
   &:hover {
-    background-color: lighten($light1, $amount: 5%);
     cursor: pointer;
-    box-shadow: 2px 1px $dark2;
+    box-shadow: 2px 5px $dark2;
   }
 
   &:focus {
