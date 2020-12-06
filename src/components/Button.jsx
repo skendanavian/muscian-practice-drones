@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useRef } from "react";
 import "./Button.scss";
 import classNames from "classnames";
 
@@ -7,15 +7,16 @@ function Button({ id, url, children }) {
 
   const btnStyle = classNames("btn", { "btn--selected": selected });
 
-  const drone = new Audio(`/sounds/${url}`);
-  // drone.loop = true;
+  const drone = useRef(new Audio(`/sounds/${url}`));
+  drone.current.loop = true;
 
   const pauseAudio = () => {
-    drone.pause();
+    drone.current.pause();
+    drone.current.currentTime = 0.0;
     console.log("pausing");
   };
   const playAudio = () => {
-    drone.play();
+    drone.current.play().catch((err) => console.log(err));
     console.log("playing");
   };
 
@@ -34,7 +35,7 @@ function Button({ id, url, children }) {
 
   const selectBtn = () => {
     console.log(`clicked - play ${url}`);
-    if (!selected) {
+    if (!selected && drone.current.paused) {
       setSelected(true);
       playAudio();
     } else if (selected) {
