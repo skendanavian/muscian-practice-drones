@@ -2,14 +2,22 @@
 
 body {
   font-family: $font1;
-  background-color: $dark1;
+  background-color: rgb(92, 92, 172);
   box-sizing: border-box;
   margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
-  font-size: 3rem;
-  color: $paused;
+  font-size: 3.5rem;
+  color: $playing;
   text-align: center;
   margin: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .h1 {
+    font-size: 5rem;
+  }
 }

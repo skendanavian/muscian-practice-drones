@@ -3,11 +3,11 @@
 .btn {
   font-family: $font1;
   font-size: 2rem;
-  margin: 20px;
+  // margin: 1rem;
   padding: 10px;
   border-radius: 2rem;
   background-color: $light1;
-  width: 300px;
+  // width: 300px;
   color: $dark2;
 
   border: none;
@@ -16,16 +16,29 @@
     background-color: $playing;
     &:hover {
       cursor: pointer;
-      box-shadow: 5px 5px $dark2;
+      box-shadow: 2px 5px 5px 2px $paused;
     }
   }
 
   &:hover {
     cursor: pointer;
-    box-shadow: 2px 5px $dark2;
+    box-shadow: 2px 5px 5px 2px $paused;
   }
 
   &:focus {
     outline: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .btn {
+    font-size: 3rem;
   }
 }
