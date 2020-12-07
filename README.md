@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Musician Practice Drones
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Musician Practice Drones is a tool for instrumentalists and vocalists to improve intonation, ear-training and improvisation skills.
+
+- The app offers the ability to play drones based on all 12 notes of the major scale.
+- A unique feature compared to other drone apps is that you can build your own chords/soundscapes by selecting multiple notes at once.
+
+The app in it's current version is fully deployed at: <a href="http://www.musicianpracticedrones.com">www.musicianpracticedrones.com</a>
+
+\*\* This is an ongoing project. I am currently working on more features including improving the audio looping and sound quality.
 
 ## Available Scripts
 
