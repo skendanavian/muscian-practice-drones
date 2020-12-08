@@ -21,16 +21,16 @@ function Button({ id, url, children }) {
   const btnStyle = classNames("btn", { "btn--selected": selected });
 
   const drone = useRef(new Audio(`/sounds/${url}`));
-  drone.current.defaultPlaybackRate = 2.0;
+  drone.current.defaultPlaybackRate = 10.0;
   drone.current.loop = true;
 
   const pauseAudio = () => {
     drone.current.pause();
-    drone.current.currentTime = 0.5;
+    drone.current.currentTime = 8;
     console.log("pausing");
   };
   const playAudio = () => {
-    drone.current.currentTime = 0.5;
+    drone.current.currentTime = 8;
     drone.current.play().catch((err) => console.log(err));
     console.log("playing");
   };
