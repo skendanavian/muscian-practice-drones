@@ -16,13 +16,14 @@ function App() {
           >
             Buy the developer a coffee!
           </a>
-          <br />
+          <br /> &copy; 2020 - All Rights Reserved -{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="http://www.sorennissen.com"
-          ></a>{" "}
-          &copy; 2020 - All Rights Reserved - Soren Nissen
+          >
+            Soren Nissen
+          </a>
         </p>
       </div>
     </div>
