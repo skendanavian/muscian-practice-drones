@@ -22,15 +22,16 @@ function Button({ id, url, children }) {
 
   const drone = useRef(new Audio(`/sounds/${url}`));
   drone.current.defaultPlaybackRate = 10.0;
+
   drone.current.loop = true;
 
   const pauseAudio = () => {
     drone.current.pause();
-    drone.current.currentTime = 8;
+    drone.current.currentTime = 3;
     console.log("pausing");
   };
   const playAudio = () => {
-    drone.current.currentTime = 8;
+    drone.current.currentTime = 3;
     drone.current.play().catch((err) => console.log(err));
     console.log("playing");
   };
