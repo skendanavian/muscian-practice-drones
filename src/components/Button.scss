@@ -3,26 +3,25 @@
 .btn {
   font-family: $font1;
   font-size: 2rem;
-  // margin: 1rem;
+
   padding: 10px;
   border-radius: 2rem;
   background-color: $light1;
-  // width: 300px;
-  color: $dark2;
+  border: 1px $dark1 solid;
 
-  border: none;
+  color: $dark2;
 
   &--selected {
     background-color: $playing;
     &:hover {
       cursor: pointer;
-      box-shadow: 2px 5px 5px 2px $paused;
+      box-shadow: 2px 5px 5px 2px $dark2;
     }
   }
 
   &:hover {
     cursor: pointer;
-    box-shadow: 2px 5px 5px 2px $paused;
+    box-shadow: 2px 5px 5px 2px $dark2;
   }
 
   &:focus {
@@ -30,15 +29,30 @@
   }
 }
 
-@media screen and (min-width: 600px) {
-  .btn {
-    width: 100%;
-    max-width: 200px;
-  }
-}
-
 @media screen and (min-width: 700px) {
   .btn {
     font-size: 3rem;
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 699px) {
+  .btn {
+    font-size: 1rem;
+    width: 120px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .btn {
+    font-size: 0.8rem;
+    width: 120px;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .btn {
+    font-size: 3rem;
+
+    width: 200px;
   }
 }

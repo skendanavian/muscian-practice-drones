@@ -3,6 +3,7 @@ import "./Button.scss";
 import classNames from "classnames";
 
 function Button({ id, url, children }) {
+  // For future versions - Possibility to implement Sine Wave with mutable properties
   // create web audio api context
   // var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
