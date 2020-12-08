@@ -2,7 +2,6 @@
 
 html {
   position: fixed;
-  overflow: auto;
 }
 
 body {
@@ -12,23 +11,24 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+  overflow: auto;
 }
 
 p {
   font-family: $font1;
-  margin: 2rem auto;
-  // margin-bottom: 2rem;
-  font-size: 1rem;
+  margin: auto;
+  padding: 0.5rem;
+  font-size: 0.5rem;
   text-align: center;
-  color: $dark1;
+  color: rgb(226, 226, 234);
 
   a {
-    color: $dark1;
+    color: rgb(226, 226, 234);
   }
 }
 
 .p2 {
-  color: $dark2;
+  color: $light1;
 }
 
 h1 {
@@ -39,6 +39,9 @@ h1 {
 }
 
 .footer {
+  margin-top: 10px;
+  background-color: $dark2;
+  z-index: 99;
   position: fixed;
   width: 100%;
   left: 0;
@@ -59,7 +62,6 @@ h1 {
     font-size: 1.2rem;
   }
   p {
-    margin-top: 1.5rem;
     font-size: 0.8rem;
   }
 }
@@ -70,6 +72,6 @@ h1 {
   }
   p {
     padding-top: 10px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }

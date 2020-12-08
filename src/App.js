@@ -21,10 +21,8 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             href="http://www.sorennissen.com"
-          >
-            Soren Nissen
-          </a>{" "}
-          &copy; 2020 - All Rights Reserved
+          ></a>{" "}
+          &copy; 2020 - All Rights Reserved - Soren Nissen
         </p>
       </div>
     </div>
