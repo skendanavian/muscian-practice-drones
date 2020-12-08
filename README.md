@@ -10,7 +10,7 @@ The app in it's current version is fully deployed at: <a href="http://www.musici
 \*\* This is an ongoing project. I am currently working on more features including improving the audio looping and sound quality.
 
 <div style="display:flex; justify-content:center">
-<img src="https://github.com/skendanavian/musician-practice-drones/blob/main/docs/ScreenShot1.png?raw=true">
+<img src="https://github.com/skendanavian/musician-practice-drones/blob/main/docs/screenShot1.png?raw=true">
 </div>
 ## Available Scripts
 
