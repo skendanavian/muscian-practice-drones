@@ -7,15 +7,15 @@ function App() {
       <h1>Musician Practice Drones</h1>
       <ButtonList />
       <div className="footer">
-        <p>
-          <a
-            className="p2"
-            href="https://www.buymeacoffee.com/skendanavian"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Buy the developer a coffee!
-          </a>
+        <a
+          className="p2 coffeeLink"
+          href="https://www.buymeacoffee.com/skendanavian"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p>Buy the developer a coffee!</p>
+        </a>
+        <p className="copyright">
           <br /> &copy; 2020 - All Rights Reserved -{" "}
           <a
             target="_blank"

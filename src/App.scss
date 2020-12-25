@@ -7,7 +7,7 @@ html {
 body {
   font-family: $font2;
   box-sizing: border-box;
-  background-color: rgb(226, 226, 234);
+  background-color: rgb(34, 34, 78);
   margin: 0;
   width: 100vw;
   height: 100vh;
@@ -17,7 +17,7 @@ body {
 p {
   font-family: $font1;
   margin: auto;
-  padding: 0.5rem;
+
   font-size: 0.5rem;
   text-align: center;
   color: rgb(226, 226, 234);
@@ -33,19 +33,40 @@ p {
 
 h1 {
   font-size: 3.5rem;
-  color: $dark2;
+  color: $playing;
   text-align: center;
   margin: 2rem;
 }
 
 .footer {
   margin-top: 10px;
-  background-color: $dark2;
+  background-color: darken($dark2, 12%);
   z-index: 99;
   position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
+  padding: 0.6rem;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+
+  .coffeeLink {
+    padding-bottom: 0.2rem;
+
+    p {
+      color: $playing;
+    }
+  }
+
+  .copyright {
+    color: $light1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+
+    a {
+      color: $light1;
+    }
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -61,17 +82,33 @@ h1 {
   h1 {
     font-size: 1.2rem;
   }
-  p {
-    font-size: 0.8rem;
+
+  .coffeeLink p {
+    font-size: 1rem;
   }
+
+  .copyright p {
+    font-size: 0.5rem;
+  }
+  // p {
+  //   font-size: 0.8rem;
+  // }
 }
 
 @media screen and (max-width: 320px) {
   h1 {
     font-size: 1.2rem;
   }
-  p {
-    padding-top: 10px;
-    font-size: 0.7rem;
+
+  .coffeeLink p {
+    font-size: 1rem;
   }
+
+  .copyright p {
+    font-size: 0.5rem;
+  }
+  // p {
+  //   padding-top: 10px;
+  //   font-size: 0.7rem;
+  // }
 }

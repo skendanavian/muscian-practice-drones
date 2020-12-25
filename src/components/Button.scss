@@ -7,7 +7,7 @@
   padding: 10px;
   border-radius: 2rem;
   background-color: $light1;
-  border: 1px $dark1 solid;
+  border: 1px $dark2 solid;
 
   color: $dark2;
 
@@ -15,13 +15,13 @@
     background-color: $playing;
     &:hover {
       cursor: pointer;
-      box-shadow: 2px 5px 5px 2px $dark2;
+      box-shadow: 2px 5px 5px 2px darken($dark2, 5%);
     }
   }
 
   &:hover {
     cursor: pointer;
-    box-shadow: 2px 5px 5px 2px $dark2;
+    box-shadow: 2px 5px 5px 2px darken($dark2, 5%);
   }
 
   &:focus {
