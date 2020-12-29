@@ -16,7 +16,7 @@ function App() {
           <p>Buy the developer a coffee!</p>
         </a>
         <p className="copyright">
-          <br /> &copy; 2020 - All Rights Reserved -{" "}
+          <br /> Copyright &copy; 2020 - All Rights Reserved -{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
