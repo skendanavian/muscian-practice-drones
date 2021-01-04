@@ -11,6 +11,7 @@ Musician Practice Drones is a tool for instrumentalists and vocalists to improve
 
 <div style="display:flex; justify-content:center">
 <img src="https://github.com/skendanavian/musician-practice-drones/blob/main/docs/screenShot1.png?raw=true">
+<img src="https://github.com/skendanavian/musician-practice-drones/blob/main/docs/screenShotMobile.png?raw=true">
 </div>
 ## Available Scripts
 
