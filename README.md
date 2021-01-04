@@ -10,7 +10,11 @@ Musician Practice Drones is a tool for instrumentalists and vocalists to improve
 \*\* This is an ongoing project. I am currently working on more features including improving the audio looping and sound quality.
 
 <div style="display:flex; justify-content:center">
+<h3 style="text-align:center">Desktop Version</h3>
 <img src="https://github.com/skendanavian/musician-practice-drones/blob/main/docs/screenShot1.png?raw=true">
+</div>
+<div style="display:flex; justify-content:center">
+<h3 style="text-align:center">Mobile Version</h3>
 <img src="https://github.com/skendanavian/musician-practice-drones/blob/main/docs/screenShotMobile.png?raw=true">
 </div>
 ## Available Scripts
