@@ -59,17 +59,25 @@ h1 {
     p {
       font-size: 1rem;
 
-      color: darken($dark2, 5%);
+      color: rgb(17, 131, 74);
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
     }
   }
 
   .copyright {
-    color: $dark2;
+    color: darken($dark2, 5%);
 
     font-size: 0.8rem;
 
     a {
-      color: $dark2;
+      color: darken($dark2, 5%);
     }
   }
 }
