@@ -1,35 +1,33 @@
 @import "../styles/variables.scss";
 
 .btn {
-  font-family: "Poppins", sans-serif;
-
+  font-family: $font1;
   font-weight: 200;
   font-size: 1.8rem;
-
   padding: 10px;
   border-radius: 2rem;
   background-color: $light1;
   border: 2px solid $dark2;
-  box-shadow: rgba(0, 0, 128, 0.315) 3px 5px 7px 0px;
-  text-shadow: 0.5px 2px 0px #564592;
-
+  box-shadow: rgba(0, 0, 128, 0.226) 2px 4px 3px 0px;
+  text-shadow: 0.5px 2px 0px $shadow;
   color: $dark2;
 
   &--selected {
     background-color: $playing;
-    color: #564592;
-    border: 1px solid $light1;
-    text-shadow: 0.5px 1.5px 0px #564592;
+    color: $shadow;
+    border: 2px solid $shadow;
+    text-shadow: 0.5px 1.5px 0px $shadow;
+
     &:hover {
       cursor: pointer;
-      text-shadow: 0.5px 1.5px 0px #564592;
+      text-shadow: 0.5px 1.5px 0px $shadow;
     }
   }
 
   &:hover {
     cursor: pointer;
-    box-shadow: 2px 3px 3px 0px #564592;
-    transform: scale(1.05);
+    box-shadow: 4px 5px 5px 2px darken(#4c6663, 10%);
+    transform: scale(1.04);
   }
 
   &:focus {

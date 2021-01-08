@@ -1,9 +1,11 @@
 import ButtonList from "../src/components/ButtonList";
+import musicNote from "./images/musicNote.png";
 import "./App.scss";
 
 function App() {
   return (
     <div className="App">
+      {/* <img className="music-note" src={musicNote} alt="musicNote"></img> */}
       <h1>Musician Practice Drones</h1>
       <ButtonList />
       <div className="footer">
