@@ -20,7 +20,7 @@
     grid-template-columns: 175px 175px 175px 175px;
     grid-template-rows: auto;
     column-gap: 60px;
-    row-gap: 50px;
+    row-gap: 60px;
   }
 
   .grid-container {
@@ -29,12 +29,12 @@
   }
 }
 
-@media screen and (min-width: 700px) and (max-width: 869px) {
+@media screen and (min-width: 710px) and (max-width: 869px) {
   .btn-grid {
     grid-template-columns: 150px 150px 150px 150px;
     grid-template-rows: auto;
     column-gap: 35px;
-    row-gap: 35px;
+    row-gap: 35;
   }
 
   .grid-container {
@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 699px) {
+@media screen and (min-width: 400px) and (max-width: 709px) {
   .btn-grid {
     column-gap: 25px;
     row-gap: 25px;

@@ -11,6 +11,7 @@
   box-shadow: rgba(0, 0, 128, 0.226) 2px 4px 3px 0px;
   text-shadow: 0.5px 2px 0px $shadow;
   color: $dark2;
+  z-index: 999;
 
   &--selected {
     background-color: $playing;
