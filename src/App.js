@@ -1,5 +1,5 @@
 import ButtonList from "../src/components/ButtonList";
-import musicNote from "./images/musicNote.png";
+// import musicNote from "./images/musicNote.png";
 import "./App.scss";
 
 function App() {
