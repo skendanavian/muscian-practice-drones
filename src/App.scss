@@ -8,7 +8,10 @@ body {
   font-family: $font2;
   box-sizing: border-box;
   background-color: $background;
-  background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+  // background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+  // background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  // background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
   margin: 0;
   width: 100vw;
   height: 100vh;
@@ -34,11 +37,11 @@ p {
 }
 
 h1 {
-  color: $dark2;
+  animation: zoom 2s 0.1s ease;
+  color: $playing;
   text-align: center;
   margin: 2rem;
   margin-bottom: 2.8rem;
-  // text-shadow: 0.5px 3px 0px $shadow;
   text-shadow: 1.5px 3px 0px $shadow;
 }
 
@@ -68,14 +71,14 @@ h1 {
   }
 
   a {
+    transition: color 1s ease;
     font-size: 1rem;
-
     color: $dark2;
     text-shadow: 0.8px 1.5px 0px $shadow;
     text-decoration: none;
 
     &:hover {
-      opacity: 0.8;
+      color: $playing;
     }
   }
 
@@ -88,44 +91,63 @@ h1 {
       font-size: 0.8rem;
       text-shadow: 0.8px 1px 0px $shadow;
       color: $dark2;
+
+      &:hover {
+        color: $playing;
+      }
     }
   }
 }
 
-.music-note {
-  animation: musicNote 5s ease;
-  top: 0;
-  margin: 2rem;
-  position: absolute;
-  height: 10rem;
-  visibility: none;
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
-@keyframes musicNote {
-  0% {
-    visibility: visible;
-    transform: translateY(-100rem);
-  }
-  20% {
-    visibility: visible;
-    transform: translateY(40rem);
-  }
-  60% {
-    visibility: visible;
-    transform: translateY(60rem);
-  }
-  80% {
-    visibility: visible;
-    transform: translateY(40rem);
-  }
-  90% {
-    transform: translateY(80rem);
-  }
-  100% {
-    transform: translateY(100rem);
-    visibility: none;
-  }
-}
+//  MUSIC NOTE ANIMATION FEATURE - IN PROGRESS
+
+// .music-note {
+//   animation: musicNote 5s ease;
+//   top: 0;
+//   margin: 2rem;
+//   position: absolute;
+//   height: 10rem;
+//
+// }
+
+// @keyframes musicNote {
+//   0% {
+//
+//     transform: translateY(-100rem);
+//   }
+//   20% {
+//
+//     transform: translateY(40rem);
+//   }
+//   60% {
+//
+//     transform: translateY(60rem);
+//   }
+//   80% {
+//
+//     transform: translateY(40rem);
+//   }
+//   90% {
+//     transform: translateY(80rem);
+//   }
+//   100% {
+//     transform: translateY(100rem);
+//
+//   }
+// }
 
 @media screen and (min-width: 760px) {
   h1 {
