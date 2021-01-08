@@ -8,9 +8,13 @@ body {
   font-family: $font2;
   box-sizing: border-box;
   background-color: $background;
+
+  // Alternate BG Textures
   // background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
   // background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
-  // background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  // background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+  // background-image: url("https://www.transparenttextures.com/patterns/noisy.png");
+
   background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
   margin: 0;
   width: 100vw;
@@ -37,8 +41,8 @@ p {
 }
 
 h1 {
-  animation: zoom 2s 0.1s ease;
-  color: $playing;
+  animation: zoom 2s 0.2s ease;
+  color: $dark2;
   text-align: center;
   margin: 2rem;
   margin-bottom: 2.8rem;
@@ -104,7 +108,7 @@ h1 {
     transform: scale(1);
   }
   25% {
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
 
   100% {

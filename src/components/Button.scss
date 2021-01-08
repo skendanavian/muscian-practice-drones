@@ -16,7 +16,7 @@
     background-color: $playing;
     color: $shadow;
     border: 2px solid $shadow;
-    text-shadow: 0.5px 1.5px 0px $shadow;
+    text-shadow: none;
 
     &:hover {
       cursor: pointer;
