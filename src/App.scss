@@ -164,28 +164,8 @@ h1 {
 
 @media screen and (min-width: 321px) and (max-width: 699px) {
   h1 {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-
-  .footer {
-    .coffeeLink {
-      font-size: 0.8rem;
-    }
-
-    .copyright {
-      font-size: 0.6rem;
-      a {
-        font-size: 0.6rem;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 320px) {
-  h1 {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .footer {
@@ -197,6 +177,26 @@ h1 {
       font-size: 0.5rem;
       a {
         font-size: 0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer {
+    .coffeeLink {
+      font-size: 0.6rem;
+    }
+
+    .copyright {
+      font-size: 0.4rem;
+      a {
+        font-size: 0.4rem;
       }
     }
   }
