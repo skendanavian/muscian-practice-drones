@@ -13,7 +13,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p>Buy the developer a coffee!</p>
+          Buy the developer a coffee!
         </a>
         <p className="copyright">
           <br /> Copyright &copy; 2020 - All Rights Reserved -{" "}
