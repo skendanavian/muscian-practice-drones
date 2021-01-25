@@ -6,29 +6,25 @@
   font-size: 1.8rem;
   padding: 10px;
   border-radius: 2rem;
-  background-color: $light1;
-  border: 2px solid $dark2;
-  box-shadow: rgba(0, 0, 128, 0.226) 2px 4px 3px 0px;
-  text-shadow: 0.5px 2px 0px $shadow;
-  color: $dark2;
+  background-color: rgba(255, 255, 255, 0.798);
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.401) 2px 4px 3px 0px;
+  color: black;
   z-index: 999;
-
-  &--selected {
-    background-color: $playing;
-    color: $shadow;
-    border: 2px solid $shadow;
-    text-shadow: none;
-
-    &:hover {
-      cursor: pointer;
-      text-shadow: 0.5px 1.5px 0px $shadow;
-    }
-  }
 
   &:hover {
     cursor: pointer;
-    box-shadow: 4px 5px 5px 2px darken(#4c6663, 10%);
-    transform: scale(1.04);
+    transform: scale(1.03);
+    opacity: 0.95;
+  }
+
+  &--selected {
+    background-color: rgba(28, 95, 129, 0.819);
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &:focus {
