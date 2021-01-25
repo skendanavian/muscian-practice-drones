@@ -7,15 +7,16 @@ html {
 body {
   font-family: $font2;
   box-sizing: border-box;
-  background-color: $background;
-
-  // Alternate BG Textures
-  // background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
-  // background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
-  // background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
-  // background-image: url("https://www.transparenttextures.com/patterns/noisy.png");
-
-  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.805),
+      rgba(0, 0, 0, 0.504),
+      rgba(0, 0, 0, 0.374)
+    ),
+    url("https://images.unsplash.com/photo-1504148591118-0a532fa91a01?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   margin: 0;
   width: 100vw;
   height: 100vh;
@@ -25,36 +26,24 @@ body {
 p {
   font-family: $font1;
   margin: auto;
-
   font-size: 0.5rem;
   text-align: center;
   color: rgb(226, 226, 234);
-  text-shadow: 0.5px 1px 0px $shadow;
-
-  a {
-    color: rgb(226, 226, 234);
-  }
-}
-
-.p2 {
-  color: $light1;
 }
 
 h1 {
   animation: zoom 2s 0.2s ease;
-  color: $dark2;
+  background-color: red;
+  width: 1.2rem;
+  color: white;
   text-align: center;
-  margin: 2rem;
-  margin-bottom: 2.8rem;
-  text-shadow: 1.5px 3px 0px $shadow;
+  margin: 1.5rem 0 1rem 1.5rem;
 }
 
 .footer {
   margin-top: 10px;
   text-align: center;
   font-weight: 200;
-  background-color: transparent;
-
   position: fixed;
   width: 100%;
   left: 0;
@@ -63,41 +52,36 @@ h1 {
   font-family: $font1;
   text-align: center;
   margin-bottom: 0.8rem;
+  text-shadow: 0.8px 1.5px 0px black;
+  color: white;
 
   .coffeeLink {
     padding-bottom: 0.2rem;
 
     p {
       font-size: 1rem;
-
-      color: $dark2;
     }
   }
 
   a {
     transition: color 1s ease;
     font-size: 1rem;
-    color: $dark2;
-    text-shadow: 0.8px 1.5px 0px $shadow;
+    color: white;
     text-decoration: none;
 
     &:hover {
-      color: $playing;
+      color: rgb(97, 154, 183);
     }
   }
 
   .copyright {
-    color: $dark2;
     font-size: 0.8rem;
-    text-shadow: 0.8px 1px 0px $shadow;
 
     a {
       font-size: 0.8rem;
-      text-shadow: 0.8px 1px 0px $shadow;
-      color: $dark2;
 
       &:hover {
-        color: $playing;
+        color: rgb(97, 154, 183);
       }
     }
   }
@@ -116,55 +100,20 @@ h1 {
   }
 }
 
-//  MUSIC NOTE ANIMATION FEATURE - IN PROGRESS
-
-// .music-note {
-//   animation: musicNote 5s ease;
-//   top: 0;
-//   margin: 2rem;
-//   position: absolute;
-//   height: 10rem;
-//
-// }
-
-// @keyframes musicNote {
-//   0% {
-//
-//     transform: translateY(-100rem);
-//   }
-//   20% {
-//
-//     transform: translateY(40rem);
-//   }
-//   60% {
-//
-//     transform: translateY(60rem);
-//   }
-//   80% {
-//
-//     transform: translateY(40rem);
-//   }
-//   90% {
-//     transform: translateY(80rem);
-//   }
-//   100% {
-//     transform: translateY(100rem);
-//
-//   }
-// }
-
 @media screen and (min-width: 760px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
   p {
     font-size: 1rem;
   }
 }
 
-@media screen and (min-width: 321px) and (max-width: 699px) {
+@media screen and (min-width: 321px) and (max-width: 759px) {
   h1 {
-    font-size: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
 
